@@ -102,10 +102,6 @@
 /* LwIP Parameter(s) not in opt.h -----------------------------*/
 #define LWIP_PROVIDE_ERRNO  1
 
-/* USER CODE BEGIN 1 */
-
-/* USER CODE END 1 */
-
 #ifdef __cplusplus
 }
 #endif

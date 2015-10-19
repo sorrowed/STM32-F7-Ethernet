@@ -55,16 +55,18 @@ struct ip_addr gw;
 
 /* USER CODE END 2 */
 
+void MX_LWIP_Reset( void )
+{
+	ipaddr.addr = 0;
+	netmask.addr = 0;
+	gw.addr = 0;
+}
+
 /* init function */
 void MX_LWIP_Init(void)
 { 
   tcpip_init( NULL, NULL );	
  
-  ipaddr.addr = 0;
-  netmask.addr = 0;
-  gw.addr = 0;
-  
-
   /* add the network interface */
   netif_add(&gnetif, &ipaddr, &netmask, &gw, NULL, &ethernetif_init, &tcpip_input);
  

@@ -60,8 +60,9 @@
 
 /* Global Variables ----------------------------------------------------------*/
 extern ETH_HandleTypeDef heth;
+extern struct netif gnetif;
 
-/* LWIP init function */	
+void MX_LWIP_Reset(void);
 void MX_LWIP_Init(void);
 
 /* USER CODE BEGIN 1 */
