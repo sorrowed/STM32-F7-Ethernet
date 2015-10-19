@@ -24,7 +24,7 @@
 							<option id="fr.ac6.managedbuild.option.gnu.cross.fpu.1607818015" name="Floating point hardware" superClass="fr.ac6.managedbuild.option.gnu.cross.fpu" value="fr.ac6.managedbuild.option.gnu.cross.fpu.fpv5-sp-d16" valueType="enumerated"/>
 							<option id="fr.ac6.managedbuild.option.gnu.cross.floatabi.599868134" name="Floating-point ABI" superClass="fr.ac6.managedbuild.option.gnu.cross.floatabi" value="fr.ac6.managedbuild.option.gnu.cross.floatabi.hard" valueType="enumerated"/>
 							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="fr.ac6.managedbuild.targetPlatform.gnu.cross.1168555550" isAbstract="false" osList="all" superClass="fr.ac6.managedbuild.targetPlatform.gnu.cross"/>
-							<builder buildPath="${workspace_loc:/STM32-F7-Ethernet Configuration}/Debug" id="fr.ac6.managedbuild.builder.gnu.cross.560560741" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="Gnu Make Builder" superClass="fr.ac6.managedbuild.builder.gnu.cross">
+							<builder buildPath="${workspace_loc:/STM32-F7-Ethernet Configuration}/Debug" id="fr.ac6.managedbuild.builder.gnu.cross.560560741" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="Gnu Make Builder" parallelBuildOn="true" parallelizationNumber="optimal" superClass="fr.ac6.managedbuild.builder.gnu.cross">
 								<outputEntries>
 									<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="outputPath" name="Debug"/>
 									<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="outputPath" name="Release"/>
@@ -35,14 +35,19 @@
 								<option id="gnu.c.compiler.option.debugging.level.439901694" name="Debug Level" superClass="gnu.c.compiler.option.debugging.level" useByScannerDiscovery="false" value="gnu.c.debugging.level.max" valueType="enumerated"/>
 								<option id="gnu.c.compiler.option.include.paths.1227169916" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
 									<listOptionValue builtIn="false" value="${ProjDirPath}/Inc"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/Lib/CMSIS/Include"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/Lib/CMSIS/Device/ST/STM32F7xx/Include"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/Lib/STM32F7xx_HAL_Driver/Inc"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/Lib/STM32F7xx_HAL_Driver/Inc/Legacy"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/Lib/BSP/Inc"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/Lib/BSP/Components/Inc"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/Lib/BSP/Fonts"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/Lib/FreeRTOS/Source/include"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/Lib/FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/Lib/FreeRTOS/Source/CMSIS_RTOS"/>
 									<listOptionValue builtIn="false" value="${ProjDirPath}/Lib/LwIP/system"/>
 									<listOptionValue builtIn="false" value="${ProjDirPath}/Lib/LwIP/src/include"/>
 									<listOptionValue builtIn="false" value="${ProjDirPath}/Lib/LwIP/src/include/ipv4"/>
-									<listOptionValue builtIn="false" value="${ProjDirPath}/Lib/STM32F7xx_HAL_Driver/Inc"/>
-									<listOptionValue builtIn="false" value="${ProjDirPath}/Lib/STM32F7xx_HAL_Driver/Inc/Legacy"/>
-									<listOptionValue builtIn="false" value="${ProjDirPath}/Lib/FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1"/>
-									<listOptionValue builtIn="false" value="${ProjDirPath}/Lib/FreeRTOS/Source/include"/>
-									<listOptionValue builtIn="false" value="${ProjDirPath}/Lib/FreeRTOS/Source/CMSIS_RTOS"/>
 									<listOptionValue builtIn="false" value="${ProjDirPath}/Lib/LwIP/system/arch"/>
 									<listOptionValue builtIn="false" value="${ProjDirPath}/Lib/LwIP/src/include/ipv4/lwip"/>
 									<listOptionValue builtIn="false" value="${ProjDirPath}/Lib/LwIP/src/include/lwip"/>
@@ -50,8 +55,6 @@
 									<listOptionValue builtIn="false" value="${ProjDirPath}/Lib/LwIP/src/include/posix"/>
 									<listOptionValue builtIn="false" value="${ProjDirPath}/Lib/LwIP/src/include/posix/sys"/>
 									<listOptionValue builtIn="false" value="${ProjDirPath}/Lib/LwIP/src/netif/ppp"/>
-									<listOptionValue builtIn="false" value="${ProjDirPath}/Lib/CMSIS/Include"/>
-									<listOptionValue builtIn="false" value="${ProjDirPath}/Lib/CMSIS/Device/ST/STM32F7xx/Include"/>
 								</option>
 								<option id="gnu.c.compiler.option.preprocessor.def.symbols.907294806" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols" useByScannerDiscovery="false" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="USE_HAL_DRIVER"/>
